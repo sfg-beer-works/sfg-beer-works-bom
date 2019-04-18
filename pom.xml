@@ -427,7 +427,7 @@
 
     <scm>
         <connection>scm:git:git@github.com:sfg-beer-works/sfg-beer-works-bom.git</connection>
-        <developerConnection>scm:git:git@github.com:sfg-beer-works/sfg-beer-works-bom.gitt</developerConnection>
+        <developerConnection>scm:git:git@github.com:sfg-beer-works/sfg-beer-works-bom.git</developerConnection>
         <url>https://github.com/sfg-beer-works/sfg-beer-works-bom</url>
         <tag>HEAD</tag>
     </scm>
