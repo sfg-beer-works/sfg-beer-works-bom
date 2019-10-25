@@ -424,7 +424,7 @@
                     <images>
                         <image>
                             <name>${docker.image.prefix}/${docker.image.name}</name>
-                            <alias>brewery-beer-service</alias>
+                            <alias>${project.artifactId}</alias>
                             <build>
                                 <!--copies artifact to docker build dir in target-->
                                 <assembly>
