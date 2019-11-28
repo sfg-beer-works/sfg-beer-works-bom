@@ -27,7 +27,7 @@
 
     <groupId>com.github.sfg-beer-works</groupId>
     <artifactId>sfg-beer-works-bom</artifactId>
-    <version>1.0.16-SNAPSHOT</version>
+    <version>1.0.16</version>
     <packaging>pom</packaging>
 
     <description>Parent Project for SFG Beer Works Projects</description>
@@ -517,7 +517,7 @@
         <connection>scm:git:git@github.com:sfg-beer-works/sfg-beer-works-bom.git</connection>
         <developerConnection>scm:git:git@github.com:sfg-beer-works/sfg-beer-works-bom.git</developerConnection>
         <url>https://github.com/sfg-beer-works/sfg-beer-works-bom</url>
-        <tag>HEAD</tag>
+        <tag>sfg-beer-works-bom-1.0.16</tag>
     </scm>
 
     <issueManagement>
