@@ -499,6 +499,10 @@
                                 </goals>
                             </execution>
                         </executions>
+                        <configuration>
+                            <!--                Exclude Lombok enhanced classes-->
+                            <excludePackageNames>guru.sfg.brewery.model.*:*.mapper.*:*.domain.*:*.mappers.*</excludePackageNames>
+                        </configuration>
                     </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
