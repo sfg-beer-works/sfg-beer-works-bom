@@ -461,7 +461,7 @@
             <id>dockerbuild</id>
             <activation>
                 <file>
-                    <exists>${project.basedir}/src/main/docker/Dockerfile</exists>
+                    <exists>/src/main/docker/Dockerfile</exists>
                 </file>
             </activation>
             <build>
