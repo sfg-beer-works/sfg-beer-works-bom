@@ -458,6 +458,33 @@
 
     <profiles>
         <profile>
+            <id>dockerbuild</id>
+            <activation>
+                <file>
+                    <exists>${project.basedir}/src/main/docker/Dockerfile</exists>
+                </file>
+            </activation>
+            <build>
+                <plugins>
+                    <!--   push to docker with release-->
+                    <plugin>
+                        <groupId>io.fabric8</groupId>
+                        <artifactId>docker-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>push-to-docker</id>
+                                <phase>deploy</phase>
+                                <goals>
+                                    <goal>build</goal>
+                                    <goal>push</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
             <id>ossrh</id>
             <build>
                 <plugins>
@@ -512,21 +539,6 @@
                                 <phase>verify</phase>
                                 <goals>
                                     <goal>sign</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <!--   push to docker with release-->
-                    <plugin>
-                        <groupId>io.fabric8</groupId>
-                        <artifactId>docker-maven-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>push-to-docker</id>
-                                <phase>deploy</phase>
-                                <goals>
-                                    <goal>build</goal>
-                                    <goal>push</goal>
                                 </goals>
                             </execution>
                         </executions>
